@@ -2,7 +2,7 @@
 
 ----
 ## Introduction
-see [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
+
 
 Mbm Store (Music Book Movie Store) is the name of the project and this abbreviation
 might be written within the document. 
@@ -20,6 +20,7 @@ further interaction with MBM Store Project..
 
 ----
 ## ASP.NET MVC Architecture
+
 The MVC architectural pattern has existed for a long time
 in software engineering. Almost all the languages use
 MVC with slight variation, but conceptually it remains the
@@ -46,8 +47,8 @@ Attributes are shown in the second partition. The attribute type is shown after 
 are shown in the third partition. They are services the class provides. The return type of a method is
 shown after the colon at the end of the method signature. The +, - and # symbols before an attribute
 and operation name in a class denote the visibility of the attribute and operation.
-+ denotes public attributes or operations ; - denotes private attributes or operations ;
-# denotes protected attributes or operations
+>+ denotes public attributes or operations ; - denotes private attributes or operations ;
+># denotes protected attributes or operations
 In Figure 2 we can see that the classes Movie, Book and Music CD are subclasses of the supeerclass
 Product and they inherit all the attributes of this class. While Movie and Book are standalone classes
 MusicCD is composed of multiple Tracks. The class Customer can have 0 or more Invoices, these beeing
@@ -60,7 +61,7 @@ an overview of the order before is created.
 ## Tag Helpers
 Tag helpers are an opt-in feature. They are not available to the page by default. They are enabled by
 adding an @addTagHelper directive to the page
-@addTagHelper **, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 The @addTagHelper directive is followed by a wildcard character (*) to specify that all tag helpers found
 in the specified assembly should be used, and then the name of the assembly containing the tag
 helpers is provided.
